@@ -1,0 +1,21 @@
+{
+  "name": "JSON Example",
+  "version": "1.0.0",
+  "users": [
+    {
+      "id": 1,
+      "name": "Alice",
+      "active": true
+    },
+    {
+      "id": 2,
+      "name": "Bob",
+      "active": false
+    }
+  ],
+  "config": {
+    "debug": false,
+    "timeout": 30,
+    "retries": 3
+  }
+}

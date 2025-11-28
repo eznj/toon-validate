@@ -1,0 +1,24 @@
+[package]
+name = "toon-validate-cli"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "tval"
+path = "src/main.rs"
+
+[dependencies]
+toon-validate-core = { path = "../toon-validate-core" }
+clap = { workspace = true }
+anyhow = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+prettytable-rs = { workspace = true }
+walkdir = { workspace = true }
+
+[dev-dependencies]
+assert_cmd = "2.0"
+predicates = "3.0"
+tempfile = "3.8"

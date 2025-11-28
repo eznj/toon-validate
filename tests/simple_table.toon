@@ -1,0 +1,4 @@
+name: "test"
+users[1]:
+  - id: 1
+    name: "Alice"

@@ -1,0 +1,32 @@
+name: "Project Example"
+version: "1.0.0"
+description: "A sample TOON file for testing"
+
+users[3]:
+  - id: 1
+    name: "Alice"
+    role: "admin"
+    active: true
+  - id: 2
+    name: "Bob"
+    role: "user"
+    active: true
+  - id: 3
+    name: "Charlie"
+    role: "user"
+    active: false
+
+settings:
+  theme: "dark"
+  notifications: true
+  max_items: 100
+
+products[2]:
+  - sku: "PROD-001"
+    name: "Widget"
+    price: 19.99
+    stock: 150
+  - sku: "PROD-002"
+    name: "Gadget"
+    price: 29.99
+    stock: 75

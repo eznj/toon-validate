@@ -1,0 +1,8 @@
+name: "Invalid Example"
+
+# This table declares 3 rows but only has 2
+users[3]:
+  - id: 1
+    name: "Alice"
+  - id: 2
+    name: "Bob"
