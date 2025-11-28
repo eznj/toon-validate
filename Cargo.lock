@@ -608,6 +608,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "toon-validate"
+version = "0.1.0"
+dependencies = [
+ "toon-validate-cli",
+]
+
+[[package]]
 name = "toon-validate-cli"
 version = "0.1.0"
 dependencies = [

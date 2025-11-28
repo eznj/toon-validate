@@ -1,9 +1,14 @@
 [package]
 name = "toon-validate-core"
+description = "Core library for TOON file parsing, validation, and token analysis"
+repository = "https://github.com/eznj/toon-validate"
+keywords = ["toon", "parser", "validation"]
+categories = ["parser-implementations"]
 version.workspace = true
 edition.workspace = true
 authors.workspace = true
 license.workspace = true
+rust-version.workspace = true
 
 [dependencies]
 serde = { workspace = true }

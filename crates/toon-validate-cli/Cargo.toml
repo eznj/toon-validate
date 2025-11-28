@@ -1,16 +1,21 @@
 [package]
 name = "toon-validate-cli"
+description = "Command-line interface for TOON validation and analysis"
+repository = "https://github.com/eznj/toon-validate"
+keywords = ["toon", "cli", "validation"]
+categories = ["command-line-utilities"]
 version.workspace = true
 edition.workspace = true
 authors.workspace = true
 license.workspace = true
+rust-version.workspace = true
 
 [[bin]]
 name = "tval"
 path = "src/main.rs"
 
 [dependencies]
-toon-validate-core = { path = "../toon-validate-core" }
+toon-validate-core = { path = "../toon-validate-core", version = "0.1.0" }
 clap = { workspace = true }
 anyhow = { workspace = true }
 serde = { workspace = true }

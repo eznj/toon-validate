@@ -1,3 +1,28 @@
+[package]
+name = "toon-validate"
+description = "Command-line TOON validator for structure validation, token analysis, and file profiling"
+repository = "https://github.com/eznj/toon-validate"
+homepage = "https://github.com/eznj/toon-validate"
+keywords = ["toon", "validation", "cli", "parser", "token-analysis"]
+categories = ["command-line-utilities", "parser-implementations"]
+readme = "README.md"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+rust-version.workspace = true
+documentation.workspace = true
+
+[[bin]]
+name = "tval"
+path = "src/main.rs"
+
+[dependencies]
+toon-validate-cli = { path = "crates/toon-validate-cli", version = "0.1.0" }
+
+# For publishing to crates.io, we'll also need the published dependency
+# toon-validate-cli = "0.1.0"
+
 [workspace]
 members = ["crates/toon-validate-core", "crates/toon-validate-cli"]
 resolver = "2"
